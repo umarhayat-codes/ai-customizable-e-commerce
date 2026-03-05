@@ -1,0 +1,193 @@
+@import "tailwindcss";
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Pacifico&family=Poppins:wght@300;400;500;600&family=Noto+Sans+SC:wght@400;500;700&family=ADLaM+Display&display=swap"); */
+
+@config "../../tailwind.config.ts";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* Custom Colors mirroring tailwind.config.ts */
+  --color-primary: #8cff2e;
+  --color-button-bg: #050505;
+  --color-text-white: #ffffff;
+  --color-text-gray: #a3a3a3;
+  --color-card-bg: #0d0d0d;
+  /* Home Section specific styles */
+  --color-section-bg: #f8f9fb;
+  --color-card-text: #1a1a1a;
+  --color-price-text: #666666;
+  --color-badge-new: #ffd700;
+  --color-badge-sold: #ff4d4f;
+  --border-gradient: linear-gradient(to bottom right, #dce3f2, #b39ddb);
+
+  /* Footer specific styles */
+  --color-footer-bg: #14141a;
+  --color-footer-input-bg: #1e1e26;
+  --color-footer-border: #21222b;
+
+  /* Custom Fonts mirroring tailwind.config.ts */
+  --font-manrope: "Manrope", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-satoshi: "Satoshi", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-pacifico: "Pacifico", cursive;
+  --font-noto-sans-sc: "Noto Sans SC", sans-serif;
+
+  /* Header specific colors */
+  --color-header-top-bg: #111111;
+  --color-header-main-bg: #ffffff;
+  --color-header-text: #000000;
+  --color-header-btn-bg: #111111;
+  --color-header-btn-text: #ffffff;
+  --color-header-border: #e5e7eb;
+
+  /* Auth specific styles */
+  --color-auth-border: #1e1f28;
+  --color-auth-placeholder: #707070;
+  --color-auth-btn-bg: #1e1f28;
+
+  /* Image Section Styles */
+  --color-section-btn-bg: #1a1a1a;
+  --color-image-section-text: #ffffff;
+
+  /* Category Card Specific Styles */
+  --color-category-card-bg: #f5f4f2;
+  --color-category-card-text-dark: #1a1a1a;
+  --color-category-card-text-light: #ffffff;
+  --color-category-card-btn-bg-dark: #1e1f28;
+  --color-category-card-btn-bg-light: #ffffff;
+
+  /* Review Section Styles */
+  --color-review-text: #2b2b35;
+
+  /* Customize Section Styles */
+  --color-customize-bg: #f5f5f5;
+  --color-customize-heading: #4a4a4a;
+  --color-customize-text: #000000;
+  --color-customize-btn-bg: #212121;
+
+  /* Hero Section Styles */
+  --color-hero-text: #ffffff;
+  --color-hero-btn-primary-bg: #1e1f28;
+  --color-hero-btn-primary-text: #ffffff;
+  --color-hero-btn-secondary-bg: #ffffff;
+  --color-hero-btn-secondary-text: #1e1f28;
+
+  /* Modal Specific Styles */
+  --color-modal-bg: #fbfbfb;
+  --color-modal-border: #dce3f2;
+  --color-modal-text: #4a4a4a;
+
+  /* Category Page Styles */
+  --color-category-text: #4a4a4a;
+  --color-category-bg: #ffffff;
+  /* Policy Section Styles */
+  --color-policy-bg: #fbfbfb;
+  --color-policy-title: #4a4a4a;
+  --color-policy-desc: #000000;
+  --font-adlam-display: "ADLaM Display", cursive;
+
+  /* Specific Colors for Caps Customize Section */
+  --color-caps-left-bg: #d0d8dc;
+  --color-caps-right-bg: #f1f1f1;
+  --color-caps-heading: #1e1f28;
+  --color-caps-subtext: #2b2b35;
+  --color-caps-btn-bg: #1e1f28;
+  --color-caps-btn-border: #4a4a4a;
+
+  /* Trending Section Styles */
+  --color-trending-heading: #1e1f28;
+  --color-trending-text: #4a4a4a;
+
+  /* Specific Colors for Trending Customize Section */
+  --color-trending-customize-bg: #f1f1f1;
+  --color-trending-customize-heading: #1e1f28;
+  --color-trending-customize-subtext: #000000;
+  --color-trending-customize-price: #000000;
+  --color-trending-customize-btn-bg: #1e1f28;
+  --color-trending-customize-btn-border: #4a4a4a;
+
+  /* Product Detail Styles */
+  --color-product-bg: #ffffff;
+  --color-product-text: #1a1a1a;
+  --color-product-gallery-bg: #f5f5f5;
+  --color-product-arrow-bg: rgba(255, 255, 255, 0.8);
+  --color-product-arrow-hover: #ffffff;
+  --color-product-thumbnail-border: #e2e8f0;
+  --color-product-thumbnail-active: #1a1a1a;
+  --color-star-active: #ffbc0d;
+  --color-star-inactive: #e2e8f0;
+  --color-border-light: #e2e8f0;
+  --color-text-description: #4b5563;
+
+  /* Final Preview Styles */
+  --color-final-preview-bg: #fcfcfc;
+  --color-final-preview-sidebar-bg: #ffffff;
+  --color-final-preview-main-bg: #f8f9fb;
+  --color-final-preview-text: #1a1a1a;
+  --color-final-preview-text-muted: #666666;
+  --color-final-preview-accent: #1e1f28;
+  --color-final-preview-border: #e2e8f0;
+  --color-final-preview-guarantee-bg: #f0fdf4;
+  --color-final-preview-guarantee-text: #166534;
+  --color-final-preview-guarantee-border: #bbf7d0;
+
+  --font-final-preview-sans: var(--font-inter);
+  --font-final-preview-heading: var(--font-poppins);
+
+  /* Checkout Specific Styles */
+  --color-checkout-bg: #ffffff;
+  --color-checkout-sidebar-bg: #f5f5f5;
+  --color-checkout-text: #1a1a1a;
+  --color-checkout-text-muted: #737373;
+  --color-checkout-border: #d1d5db;
+  --color-checkout-input-bg: #ffffff;
+  --color-checkout-btn-bg: #000000;
+  --color-checkout-btn-text: #ffffff;
+  --color-checkout-accent: #000000;
+  --font-checkout-main: var(--font-inter);
+  --font-checkout-heading: var(--font-poppins);
+
+  /* Contact Specific Styles */
+  --color-contact-bg: #ffffff;
+  --color-contact-heading: #1a1a1a;
+  --color-contact-text: #666666;
+  --color-contact-input-border: #e2e8f0;
+  --color-contact-input-focus: #1a1a1a;
+  --color-contact-btn-bg: #1a1b24;
+  --color-contact-btn-hover: #000000;
+  --color-contact-card-bg: #ffffff;
+  --color-contact-card-border: #f1f5f9;
+  --color-contact-card-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+  --font-contact-main: var(--font-inter);
+  --font-contact-heading: var(--font-poppins);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@utility no-scrollbar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
